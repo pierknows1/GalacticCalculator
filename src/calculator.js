@@ -20,5 +20,6 @@ mars(){
 }
 jupiter(){
   this.earthAge = parseInt((this.earthAge / 11.86).toFixed());
+  this.expectancy = parseInt((this.expectancy / 11.86).toFixed());
 }
 }

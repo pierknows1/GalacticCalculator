@@ -6,9 +6,8 @@
             planetAge = new Age(28, 73);
         });
 
-        test('should show an age constructor', () => {
+        test('should return age constructor', () => {
             expect(planetAge.earthAge).toEqual(28);
-            expect(planetAge.expectancy).toEqual(73);
 
         });
 
@@ -24,12 +23,18 @@
         });
         test('should return an age in mars years', () => {
             planetAge.mars();
-            expect(planetAge.earthAge).toEqual(39);
-            expect(planetAge.expectancy).toEqual(15);
+            expect(planetAge.earthAge).toEqual(15);
+            expect(planetAge.expectancy).toEqual(39);
         });
         test('should return an age in jupiter years', () => {
             planetAge.jupiter();
             expect(planetAge.earthAge).toEqual(2);
+            expect(planetAge.expectancy).toEqual(6);
+        });
+        test('should return life expectancy in mercury', () => {
+         
+            expect(planetAge.expectancy).toEqual(73);
+
         });
 
     })
