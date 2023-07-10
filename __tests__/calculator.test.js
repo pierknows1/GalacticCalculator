@@ -7,34 +7,57 @@
         });
 
         test('should return age constructor', () => {
-            expect(planetAge.earthAge).toEqual(28);
-
-        });
+             expect(planetAge.earthAge).toEqual(28);
+         });
 
         test('should return an age in mercury years', () => {
-            planetAge.mercury();
-            expect(planetAge.earthAge).toEqual(117);
-            expect(planetAge.expectancy).toEqual(304);
+             planetAge.mercury();
+        expect(planetAge.earthAge).toEqual(117);
         });
+        
         test('should return an age in venus years', () => {
             planetAge.venus();
             expect(planetAge.earthAge).toEqual(45);
-            expect(planetAge.expectancy).toEqual(118);
+
         });
         test('should return an age in mars years', () => {
             planetAge.mars();
             expect(planetAge.earthAge).toEqual(15);
-            expect(planetAge.expectancy).toEqual(39);
+
         });
         test('should return an age in jupiter years', () => {
             planetAge.jupiter();
             expect(planetAge.earthAge).toEqual(2);
-            expect(planetAge.expectancy).toEqual(6);
+        
+       
         });
-        test('should return life expectancy in mercury', () => {
-         
+        test('should return life expectancy in earth', () => {
             expect(planetAge.expectancy).toEqual(73);
-
         });
+
+        test('should return life expectancy in mercury', () => {
+            planetAge.mercury();
+            const mercuryExpectancy = planetAge.getMercuryExpectancy();
+            expect(mercuryExpectancy).toEqual(304);
+          });
+
+          test('should return life expectancy in venus', () => {
+            planetAge.venus();
+            const VenusExpectancy = planetAge.getVenusExpectancy();
+            expect(VenusExpectancy).toEqual(118);
+          });
+
+          test('should return life expectancy in mars', () => {
+            planetAge.mars();
+            const MarsExpectancy = planetAge.getMarsExpectancy();
+            expect(MarsExpectancy).toEqual(39);
+          });
+
+          test('should return life expectancy in jupiter', () => {
+            planetAge.jupiter();
+            const JupiterExpectancy = planetAge.getJupiterExpectancy();
+            expect(JupiterExpectancy).toEqual(6);
+          });
+
 
     })
