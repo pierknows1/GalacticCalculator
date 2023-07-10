@@ -3,11 +3,13 @@
     describe('Age', () => {
         let planetAge;
         beforeEach( () => {
-            planetAge = new Age(28);
+            planetAge = new Age(28, 73);
         });
 
         test('should show an age constructor', () => {
             expect(planetAge.earthAge).toEqual(28);
+            expect(planetAge.expectancy).toEqual(73);
+
         });
 
         test('should return an age in mercury years', () => {
@@ -26,4 +28,5 @@
             planetAge.jupiter();
             expect(planetAge.earthAge).toEqual(2);
         });
+
     })
