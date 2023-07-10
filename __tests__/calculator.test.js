@@ -76,11 +76,6 @@
             expect(planetAge.planetLeft()).toEqual("you have 71 years to live.");
           });
 
-          test('should return years lived past expectancy on mercury', () => {
-            let planet = new Age (28, 38);
-            planet.mercury();
-            expect(planet.planetLeft()).toEqual("You have lived 79 past your expectancy.")
-          });
 
           test('should return years lived past expectancy on mercury', () => {
             let planet = new Age (28, 38);
