@@ -58,6 +58,28 @@
             const JupiterExpectancy = planetAge.getJupiterExpectancy();
             expect(JupiterExpectancy).toEqual(6);
           });
+        
+          test('should return status of life expectancy on Mercury', () => {
+            planetAge.mercury();
+            expect(planetAge.planetLeft()).toEqual("You have lived 44 past your expectancy.");
+          });
+          test('should return status of life expectancy on Venus', () => {
+            planetAge.venus();
+            expect(planetAge.planetLeft()).toEqual("you have 28 years to live.");
+          });
+          test('should return status of life expectancy on Mars', () => {
+            planetAge.mars();
+            expect(planetAge.planetLeft()).toEqual("you have 58 years to live.");
+          });
+          test('should return status of life expectancy on Jupiter', () => {
+            planetAge.jupiter();
+            expect(planetAge.planetLeft()).toEqual("you have 71 years to live.");
+          });
 
+          test('should return years lived past expectancy on mercury', () => {
+            let planet = new Age (20, 30);
+            planet.mercury();
+            expect(planet.planetLeft()).toEqual("You have lived 53 past your expectancy.")
+          })
 
-    })
+        });

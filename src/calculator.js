@@ -32,31 +32,18 @@ jupiter(){
 getJupiterExpectancy() {
     return parseInt((this.expectancy / 11.86).toFixed());
   }
+
+
+planetLeft (){
+  let left = this.expectancy - this.earthAge;
+
+  if (left > 0) {
+    this.left = `you have ${left} years to live.`
+  } else if (left < 0 ){
+    this.left = `You have lived ${Math.abs(left)} past your expectancy.`
+  } else {
+    this.left = `You have reached your life expectancy.`;
+  }
+  return this.left;
+  }
 }
-
-
-
-// mars(){
-//   this.earthAge = parseInt((this.earthAge / 1.88).toFixed());
-// }
-// getMarsExpectancy() {
-//     return parseInt((this.expectancy / 1.88).toFixed());
-//  };
-  
-
-
-
-// mars(){
-//   this.earthAge = parseInt((this.earthAge / 1.88).toFixed());
-// }
-
-// getMarsExpectancy() {
-//   return parseInt((this.expectancy / 1.88).toFixed());
-// }
-
-
-// jupiter(){
-//   this.earthAge = parseInt((this.earthAge / 11.86).toFixed());
-//   this.expectancy = parseInt((this.expectancy / 11.86).toFixed());
-// }
-// }
