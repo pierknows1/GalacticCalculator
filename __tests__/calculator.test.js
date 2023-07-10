@@ -24,8 +24,8 @@
         });
         test('should return an age in mars years', () => {
             planetAge.mars();
-            expect(planetAge.earthAge).toEqual(15);
-            expect(planetAge.expectancy).toEqual();
+            expect(planetAge.earthAge).toEqual(39);
+            expect(planetAge.expectancy).toEqual(15);
         });
         test('should return an age in jupiter years', () => {
             planetAge.jupiter();
