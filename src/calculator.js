@@ -7,6 +7,8 @@ export default class Age {
 mercury(){
   this.earthAge = parseInt((this.earthAge / .24).toFixed());
 }
-
+venus(){
+  this.earthAge = parseInt((this.earthAge / .62).toFixed());
+}
 }
 
