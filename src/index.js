@@ -1,6 +1,1 @@
-
-
-let superAge = (e) => {
-  e.preventDefault();
-
-}
+import superAge from "./calculator.js";
