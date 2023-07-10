@@ -18,5 +18,8 @@
             planetAge.venus();
             expect(planetAge.earthAge).toEqual(45);
         });
-
+        test('should return an age in mars years', () => {
+            planetAge.mars();
+            expect(planetAge.earthAge).toEqual(15);
+        });
     })

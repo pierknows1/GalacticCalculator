@@ -10,5 +10,8 @@ mercury(){
 venus(){
   this.earthAge = parseInt((this.earthAge / .62).toFixed());
 }
+mars(){
+  this.earthAge = parseInt((this.earthAge / 1.88).toFixed());
 }
 
+}
