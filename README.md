@@ -1,29 +1,24 @@
-# (Application Name)
+# Galactic Calculator
 
-#### (Brief Description of Application)
+#### an application that gives you your age in other planets.
 
-#### By (Your Name Here)
+#### By Pier Rodriguez
 
 ## Technologies Used
 
-- _List all_
-- _the major technologies_
-- _you used in your project_
-- _here_
+_JS
+_CSS
+_HTML
+_JEST
 
 ## Description
 
-## Setup/Installation Requirements
+*website that gives you your age in other planet years.
 
-- _This is a great place_
-- _to list setup instructions_
-- _in a simple_
-- _easy-to-understand_
-- _format_
+## Setup/Installation Requirements
 
 ## Known Bugs
 
-- _Any known issues_
-- _should go here_
+_no known bugs
 
 ## License
