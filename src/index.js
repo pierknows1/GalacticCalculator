@@ -1,5 +1,5 @@
-import Age from "./calculator.js";
+// import Age from "./calculator.js";
 
-function displayAge()
+// function displayAge()
 
-let age = document.getElementById("ageInput").value;
+// let age = document.getElementById("ageInput").value;

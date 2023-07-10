@@ -34,15 +34,14 @@
   },
   "dependencies": {
     "@babel/core": "^7.18.6",
-    "bootstrap": "^5.2.3",
-    "webpack-cli": "^3.3.12"
+    "bootstrap": "^5.2.3"
   },
   "directories": {
     "test": "tests"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pierknows1/New-Galactic-Calculator"
+    "url": "git+https://github.com/pierknows1/New-Galactic-Calculator.git"
   },
   "bugs": {
     "url": "https://github.com/pierknows1/New-Galactic-Calculator/issues"
