@@ -15,14 +15,17 @@
         test('should return an age in mercury years', () => {
             planetAge.mercury();
             expect(planetAge.earthAge).toEqual(117);
+            expect(planetAge.expectancy).toEqual(304);
         });
         test('should return an age in venus years', () => {
             planetAge.venus();
             expect(planetAge.earthAge).toEqual(45);
+            expect(planetAge.expectancy).toEqual(118);
         });
         test('should return an age in mars years', () => {
             planetAge.mars();
             expect(planetAge.earthAge).toEqual(15);
+            expect(planetAge.expectancy).toEqual();
         });
         test('should return an age in jupiter years', () => {
             planetAge.jupiter();
